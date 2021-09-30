@@ -1,2 +1,2 @@
 # online-Resume
-[click here] https://naga-bharadwaj-cheruvu.github.io/online-Resume/
+[click here] https://bharath-bmon.github.io/online-Resume/
