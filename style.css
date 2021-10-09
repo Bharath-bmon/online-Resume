@@ -63,15 +63,12 @@
     100%{transform: translateY(10px);}
 }
 /*------------------------------------------------------------About---------------------------------------------------------*/
-.about
-{
-    padding-top: 100px;
-    margin-bottom: -130px;
+
+.about .row .col-md-8{
+    margin-top: 100px;
 }
-.profile-img
-{
-    height:400px;
-}
+
+
 .nav-bar
 {
     top:0;
@@ -98,7 +95,7 @@
     background: rgb(0, 0, 0);
     text-align: center;
     position: fixed;
-    right:30px;
+    right:50px;
     top:20px;
     border-radius: 3px;
     z-index: 3;
@@ -116,34 +113,56 @@
 .nav-link
 {
     color: #fff !important;
+    font-size: 0.9rem;
+    margin-right: 18px;
+    transition: color 0.5s;
+}
+.nav-link:hover{
+    color: rgb(172, 172, 172) !important;
+}
+.skills-bar{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.skills-bar div{
+    width: 70%;
 }
 .skills-bar p
-{
+{   
           margin-bottom: 6px;
           font-weight: 600;
+          font-size: 0.8rem;
 }
 .progress
 {
     border-radius: 16px  !important;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 .progress-bar
 {
     border-radius: 16px;
     background: #000 !important;
+    font-size: 0.7rem;
 }
-
 /*--------------------------------------------------------Resume----------------------------------------------------------*/
 
 .resume
 {
-    margin-top: -50px ;
+    margin-top: 150px ;
     padding-bottom: 30px;
     background: #f9f9f9;
 }
 .resume.h3
 {
     margin-bottom: 50px;
+}
+.myexperience, .myeducation{
+    margin-top: 50px;
+    font-size: 1.8rem;
+    font-weight: 800;
 }
 .timeline
 {
@@ -166,7 +185,7 @@
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 30px;
-    background: rgb(255, 238, 238);
+    background: rgb(255, 244, 244);
 }
 .timeline li h4
 {
@@ -175,13 +194,17 @@
     color: #fff;
     font-size: 15px;
 }
+.timeline li p{
+    padding: 15px;
+    font-size: 0.8rem;
+}
 .timeline li h4 span
 {
     font-weight: bold;
     color: rgb(248, 200, 144);
 
 }
-.timeline li :before
+.timeline h4 :before
 {
     content: '';
     background:#fff;
@@ -199,45 +222,50 @@
 {
     font-weight: bold;
     color: rgb(93, 160, 31);
+    font-size: 1rem;
 
 }
 .skills
 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 250px;
 }
 .skills h1
 {
     margin-bottom: 15px;
+    font-weight: 800;
+}
+.skills p{
+    font-size: 0.8rem;
 }
 .skills-box
 {
+    height: 200px;
+    width: 350px;
     background: rgb(255, 238, 238);
-    padding: 10px;
+    padding: 30px 0px 0px 20px;
     margin-top: 20px;
-    border-bottom-right-radius: 50px;
-    border-top-left-radius: 50px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 .skills-box .fa-bars
 {
     margin: 0 10px;
-    font-size: 20x;
 }
 .skills-box span
 {
-    margin: 3px;
+    margin-left: 8px;
     font-size: 20px;
     font-weight: bold;
 }
 .skills-box p
 {
-    font-size: 15px;
     margin-top: 20px;
-    color: #777;
+    color: rgb(63, 63, 63);
 }
 .skills-box:hover
 {
-    background: rgb(85, 82, 82);
+    background: rgb(51, 51, 51);
     color: #fff;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
@@ -252,28 +280,45 @@
 /*--------Contact-----*/
 .contact
 {
-    padding-top: 50px;
-    height: 100vh;
+    height: 50vh;
     background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://www.pngkit.com/png/detail/336-3369366_15-png-images-for-website-background-free-on.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
+    box-sizing: border-box;
 }
 .contact .row
 {
     padding: 30px 0;
     font-size: 22px;
 }
+.container {
+    padding-top: 40px;
+}
+.container h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.container p{
+    font-size: 0.8rem;
+    font-weight: 400;
+}
 .contact .col-md-4 .fa
 {
     padding: 10px;
     font-size: 40px;
 }
+.contact .col-md-4> p{
+    font-size: 0.8rem;
+}
+.contact .col-md-4 .fa:hover{
+    cursor: pointer;
+}
 .contact .btn
 {
     padding: 10px 25px 10px 25px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 30px;
     border: 2px solid #fff;
     background: transparent;
@@ -294,13 +339,20 @@
 }
 .footer
 {
+    padding-top: 20px;
     background: #000;
-    height: 50px;
-    margin-top: 50px;
+    height: 8vh;
     color: #fff;
-    padding-top: 10px;
 }
-/*-------------------social icons--------------------*/
+.footer p{
+    font-size: 0.7rem;
+}
+.footer p span{
+    font-weight: 600;
+}
+
+
+/* -------------------social icons--------------------
 .social-icons
 {
     top: 50%;
@@ -323,10 +375,10 @@
     margin-top: 5px;
     color: #fff;
     background: black;
+    transition: 1s;
 }
 .social-icons ul li:hover
 {
     padding-left: 30px;
     width: 80px;
-    transition: 1s;
-}
+} */
