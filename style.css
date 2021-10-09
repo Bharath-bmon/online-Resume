@@ -1,4 +1,9 @@
- body
+a {
+    color: white;
+    text-decoration: none; /* no underline */
+  }
+
+body
 {
     margin: 0;
     padding: 0;
@@ -130,11 +135,10 @@
 .skills-bar div{
     width: 70%;
 }
-.skills-bar p
-{   
+.skills-bar div p{   
           margin-bottom: 6px;
-          font-weight: 600;
-          font-size: 0.8rem;
+          font-weight: 800;
+          font-size: 0.9rem;
 }
 .progress
 {
@@ -146,6 +150,7 @@
     border-radius: 16px;
     background: #000 !important;
     font-size: 0.7rem;
+    font-weight: 600;
 }
 /*--------------------------------------------------------Resume----------------------------------------------------------*/
 
@@ -161,8 +166,8 @@
 }
 .myexperience, .myeducation{
     margin-top: 50px;
-    font-size: 1.8rem;
-    font-weight: 800;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 .timeline
 {
@@ -187,7 +192,7 @@
     margin-left: 30px;
     background: rgb(255, 244, 244);
 }
-.timeline li h4
+.timeline li h3
 {
     background-color: #000;
     padding: 5px 0 5px 20px;
@@ -196,15 +201,16 @@
 }
 .timeline li p{
     padding: 15px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
-.timeline li h4 span
+.timeline li h3 span
 {
     font-weight: bold;
     color: rgb(248, 200, 144);
 
 }
-.timeline h4 :before
+.timeline h3 :before
 {
     content: '';
     background:#fff;
@@ -303,6 +309,9 @@
 .container p{
     font-size: 0.8rem;
     font-weight: 400;
+}
+.contact .col-md-4 a{
+    color: white;
 }
 .contact .col-md-4 .fa
 {
