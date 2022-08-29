@@ -1,2 +1,2 @@
 # online-Resume
-[click here] https://bharath-bmon.github.io/online-resume/
+For Website [Click Here](https://bharath-bmon.github.io/online-resume/)
